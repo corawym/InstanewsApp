@@ -1,18 +1,9 @@
-/*global style*/
-body{
-  width: 100%;
-  margin: 0 auto;
-}
-
-/*mobile view*/
-
-
-
-/*tablet view*/
-@media screen and (min-width: 600px) {
-}
-
-
-/*desktop view*/
-@media screen and (min-width: 1240px) {
-}
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'selectric';

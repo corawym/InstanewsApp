@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 
 // Gulp Tasks Below
 
-// Gulp Scripts Task
+// Gulp scripts task
 gulp.task('scripts', ['lint'], function() {
    gulp.src('./js/*.js') // What files do we want gulp to consume?
     .pipe(uglify()) // Call the uglify function on these files
@@ -21,7 +21,7 @@ gulp.task('scripts', ['lint'], function() {
     .pipe(gulp.dest('./build/js')) // Where do we put the result?
 });
 
-// Gulp sass function
+// Gulp sass task
 gulp.task('sass', function() {
    gulp.src('./sass/style.scss')
     .pipe(prettyError())
@@ -35,24 +35,24 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./build/css'));
 });
 
-//Reload browser
+// Gulp browser sync task
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "./"
         }
-    }); //End of browser sync init
+    }); // End of browser sync init
 
     gulp.watch(['./build/js/*.js','./index.html','./build/css/*.css']).on('change', browserSync.reload);
 });
 
-// Gulp watch function
+// Gulp watch task
 gulp.task('watch', function() {
    gulp.watch('./js/*.js', ['scripts']);
    gulp.watch('./sass/*.scss', ['sass']);
 });
 
-//Gulp lint function
+// Gulp lint task
 gulp.task('lint', function() {
   return gulp.src(['./js/*.js']) 
     .pipe(eslint())
@@ -60,5 +60,5 @@ gulp.task('lint', function() {
     .pipe(eslint.failAfterError());
 });
 
-//Gulp Default Text
+// Gulp default task
 gulp.task('default', ['watch','browser-sync']);

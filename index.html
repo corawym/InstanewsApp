@@ -9,7 +9,7 @@
   </head>
 
   <body class="container">
-    <!--site header section-->
+    <!--Below is the site header.-->
     <header class="site-header">
       <div class="header-logo">
         <h1 class="screen-reader">Instanews App</h1>
@@ -17,26 +17,32 @@
       </div>
       <div class="header-selector">
         <p>Choose a section</p>
-        <select name="select">
+        <select name="select" id="sections">
           <option value="">--Please select--</option>  
+          <option value="home">Home</option>  
+          <option value="opinion">Opinion</option>  
+          <option value="world">World</option>  
+          <option value="national">National</option> 
+        
         </select>
       </div>
-
     </header>
 
-    <!--story grid section-->
+    <!--Below is the section of story grid.-->
     <section class="story-grid">
-
+      <ul class="story-list">
+      </ul>
 
     </section>
 
-    <!--site footer section-->
+    <!--Below is the site footer.-->
     <footer class="site-footer">
       <div class="footer-copyright">
         <p>© Copyright 2016 <span>Instanews</span></p>
       </div>
     </footer>
-
+  
+  <!--JavaScript files-->
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

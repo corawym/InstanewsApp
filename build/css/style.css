@@ -505,6 +505,14 @@ template {
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 0; }
 
+.loader {
+  width: 100%;
+  text-align: center;
+  margin: 100px 0;
+  display: none; }
+  .loader img {
+    width: 50px; }
+
 .site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,6 +563,8 @@ template {
         flex-basis: 33.33%; } }
 
 @media screen and (min-width: 1240px) {
+  .container {
+    max-width: 1240px; }
   .header-logo {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%; }

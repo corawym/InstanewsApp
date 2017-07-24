@@ -68,7 +68,6 @@
   background-size: cover;
   height: 400px;
 }
-
 .story-list-text{
   position: absolute;
   bottom: 0;
@@ -78,6 +77,15 @@
   margin-bottom: 0;
 }
 
+.loader{
+  width: 100%;
+  text-align: center;
+  margin: 100px 0;
+  display: none;
+  img{
+    width: 50px;
+  }
+}
 // mobile - footer style
 .site-footer{
   display: flex;
@@ -142,6 +150,9 @@
 
 // desktop view
 @media screen and (min-width: 1240px) {
+  .container{
+    max-width: 1240px;
+  }
   // desktop - header style
   .header-logo{
     flex-basis: 20%;

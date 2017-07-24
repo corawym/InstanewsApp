@@ -9,6 +9,7 @@ $(document).ready(function(){
     // remove the previous select option
     $('.story-list-item').remove();
     $('.site-footer').hide();
+    $('.loader').show();
 
     // use Ajax to get data from the NYT Top Stories API
     var sectionName = $(this).val();
@@ -42,15 +43,17 @@ $(document).ready(function(){
               storyListItem += '<div class="story-list-bgphoto" style="' + style + '"><p class="story-list-text">';
               storyListItem += storyAbstract;
               storyListItem += '</p></div></a></li>';
-        
-          $('.story-list').append(storyListItem);
           
+          $('.loader').hide();
+          $('.story-list').append(storyListItem);
+          $('.site-footer').show();
         }); // end of each function
       }else{
         $('.story-list').append('<li><p>Sorry, no stories are updated.</p></li>');
+        $('.site-footer').show();
       }
-      $('.site-footer').show();
-       
+      
+
     }).fail(function(err) {
       throw err;
     }); // end of fail function

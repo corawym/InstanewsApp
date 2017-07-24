@@ -572,9 +572,9 @@ template {
     -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%; } }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1000px) {
   .container {
-    max-width: 1240px; }
+    max-width: 1000px; }
   .header-logo {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%; }

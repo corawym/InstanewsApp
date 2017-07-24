@@ -87,7 +87,7 @@
   margin-bottom: 0;
 }
 .error-msg{
-margin: 30px 0;
+  margin: 30px 0;
 }
 .loader{
   width: 100%;
@@ -148,8 +148,6 @@ margin: 30px 0;
       }
     }
   }
-  
-
   // tablet - story grid style
   .story-list-item{
   flex-basis: 33.33%;
@@ -157,9 +155,9 @@ margin: 30px 0;
 }
 
 // desktop view
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1000px) {
   .container{
-    max-width: 1240px;
+    max-width: 1000px;
   }
   // desktop - header style
   .header-logo{
@@ -168,12 +166,10 @@ margin: 30px 0;
   .header-selector{
     flex-basis: 80%;
   }
-
   // desktop - story grid style
   .story-list-item{
     flex-basis: 25%;
   }
-
   // desktop - footer style
   .footer-copyright{
     text-align: left;

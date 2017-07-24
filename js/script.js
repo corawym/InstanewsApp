@@ -1,8 +1,14 @@
 $(document).ready(function(){
+
   // Select a section function
   $('#sections').on('change', function() {
+
+    //  change the size of header
+    $('.site-header').addClass('site-header-small');
+
     // remove the previous select option
     $('.story-list-item').remove();
+    $('.site-footer').hide();
 
     // use Ajax to get data from the NYT Top Stories API
     var sectionName = $(this).val();
@@ -38,11 +44,13 @@ $(document).ready(function(){
               storyListItem += '</p></div></a></li>';
         
           $('.story-list').append(storyListItem);
+          
         }); // end of each function
       }else{
         $('.story-list').append('<li><p>Sorry, no stories are updated.</p></li>');
       }
-        
+      $('.site-footer').show();
+       
     }).fail(function(err) {
       throw err;
     }); // end of fail function

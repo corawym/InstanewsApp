@@ -694,11 +694,11 @@ template {
   margin-top: 7rem; }
 
 .header-selector {
-  margin-bottom: 7rem;
-  width: 200px; }
+  margin-bottom: 7rem; }
 
 .header-selector-width {
-  width: 250px; }
+  width: 250px;
+  margin: 0 auto; }
 
 .screen-reader {
   display: none; }
@@ -786,6 +786,8 @@ template {
         flex-basis: 60%;
     text-align: left;
     margin-top: 12rem; }
+  .header-selector-width {
+    margin: 0; }
   .site-header-small {
     height: 120px; }
     .site-header-small .header-logo {

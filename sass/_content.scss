@@ -119,6 +119,9 @@
 // tablet view 
 @media screen and (min-width: 600px) {
   // tablet - header style
+  .site-header{
+    flex-wrap: nowrap;
+  }
   .header-logo, .header-selector{
     margin-bottom: 0;
   }
@@ -150,15 +153,12 @@
   }
   // tablet - story grid style
   .story-list-item{
-  flex-basis: 33.33%;
+    flex-basis: 33.33%;
   }
 }
 
 // desktop view
 @media screen and (min-width: 1000px) {
-  .container{
-    max-width: 1000px;
-  }
   // desktop - header style
   .header-logo{
     flex-basis: 20%;

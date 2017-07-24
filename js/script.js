@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('#sections').on('change', function() {
     
     var sectionName = $(this).val();
-    if (sectionName != ""){
+    if (sectionName !== ''){
 
       //  change the size of header
       $('.site-header').addClass('site-header-small');

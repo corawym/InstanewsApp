@@ -76,7 +76,9 @@
   background-color: rgba(0, 0, 0, .7);
   margin-bottom: 0;
 }
-
+.error-msg{
+margin: 120px 0;
+}
 .loader{
   width: 100%;
   text-align: center;
@@ -86,11 +88,13 @@
     width: 50px;
   }
 }
+
 // mobile - footer style
-.site-footer{
+.site-footer,{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 10vh;
 }
 .footer-copyright{
   flex-basis: 100%;

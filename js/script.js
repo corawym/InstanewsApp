@@ -20,7 +20,7 @@ $(document).ready(function(){
                 });
 
     $.ajax({
-      url: url,
+      // url: url,
       method: 'GET'
     }).done(function(result) {
       var allTwelveStoriesWithImages = [];
@@ -44,19 +44,22 @@ $(document).ready(function(){
               storyListItem += storyAbstract;
               storyListItem += '</p></div></a></li>';
           
-          $('.loader').hide();
           $('.story-list').append(storyListItem);
-          $('.site-footer').show();
         }); // end of each function
       }else{
-        $('.story-list').append('<li><p>Sorry, no stories are updated.</p></li>');
-        $('.site-footer').show();
+        
+        $('.story-list').append('<li><p class="error-msg">Sorry, no stories are updated.</p></li>');
       }
-      
 
     }).fail(function(err) {
+      $('.loader').hide();
+      $('.story-list').append('<li><p class="error-msg">Internal Server Error</p></li>');
+      $('.site-footer').show(); 
       throw err;
-    }); // end of fail function
+    }).always(function(){
+       $('.loader').hide();
+       $('.site-footer').show();  
+    }); // end of always function
 
   }); // end of on change function
 

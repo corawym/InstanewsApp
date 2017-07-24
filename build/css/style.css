@@ -505,6 +505,9 @@ template {
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 0; }
 
+.error-msg {
+  margin: 120px 0; }
+
 .loader {
   width: 100%;
   text-align: center;
@@ -522,7 +525,8 @@ template {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  height: 10vh; }
 
 .footer-copyright {
   -ms-flex-preferred-size: 100%;

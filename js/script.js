@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   // Select a section function
   $('#sections').on('change', function() {
-
     //  change the size of header
     $('.site-header').addClass('site-header-small');
 
@@ -20,7 +19,7 @@ $(document).ready(function(){
                 });
 
     $.ajax({
-      // url: url,
+      url: url,
       method: 'GET'
     }).done(function(result) {
       var allTwelveStoriesWithImages = [];
@@ -47,11 +46,12 @@ $(document).ready(function(){
           $('.story-list').append(storyListItem);
         }); // end of each function
       }else{
-        
+        $('.container').addClass('container-vh');
         $('.story-list').append('<li><p class="error-msg">Sorry, no stories are updated.</p></li>');
       }
 
     }).fail(function(err) {
+      $('.container').addClass('container-vh');
       $('.loader').hide();
       $('.story-list').append('<li><p class="error-msg">Internal Server Error</p></li>');
       $('.site-footer').show(); 

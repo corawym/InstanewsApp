@@ -1,0 +1,19 @@
+// footer style
+.site-footer{
+  height: 10vh;
+  width: 100%;
+}
+.footer-copyright{
+  text-align: center;
+  @include desktop{
+    text-align: left;
+    padding-left: 5rem;
+  }
+  p, span{
+    color: $primary-color-grey;
+  }
+  span{
+    text-transform: uppercase;
+  }
+}
+

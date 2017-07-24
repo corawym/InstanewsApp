@@ -1,61 +1,4 @@
-// global style
-.container{
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.container-vh{
-  height: 100vh;
-}
-*{
-  box-sizing: border-box;
-  font: $base-font;
-  line-height: 1.5;
-  color: $primary-color-white;
-  background-color: $background-color-black; 
-}
-
-// mobile view
-// mobile - header style
-.site-header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 90vh;
-  transition: all .3s linear 0s;
-}
-.header-logo, .header-selector{
-  flex-basis: 100%;
-  text-align: center;
-}  
-.header-logo{
-  margin-top: 7rem; 
-}
-.header-selector{
-  margin-bottom: 7rem;
-}
-.header-selector-width{
-  width: 250px;
-  margin: 0 auto;
-}
-.screen-reader{
-  display: none;
-}
-// mobile - header style - small
-.site-header-small{
-  height: 250px;
-  .header-logo{
-    margin-top: 30px; 
-    img{
-      height: 120px;
-    }
-  }
-}
-
-// mobile - story grid style
+// story grid style
 .story-grid{
   display: none;
 }
@@ -72,9 +15,14 @@
     }
   }
 }
-
 .story-list-item{
   flex-basis: 100%;
+  @include tablet{
+    flex-basis: 33.33%;
+  }
+  @include desktop{
+    flex-basis: 25%;
+  }
 }
 .story-list-bgphoto{
   position: relative;
@@ -103,83 +51,3 @@
   }
 }
 
-// mobile - footer style
-.site-footer{
-  height: 10vh;
-  width: 100%;
-}
-.footer-copyright{
-  text-align: center;
-  p, span{
-    color: $primary-color-grey;
-  }
-  span{
-    text-transform: uppercase;
-  }
-}
-
-
-
-// tablet view 
-@media screen and (min-width: 600px) {
-  // tablet - header style
-  .site-header{
-    flex-wrap: nowrap;
-  }
-  .header-logo, .header-selector{
-    margin-bottom: 0;
-  }
-  .header-logo{
-    flex-basis: 40%;
-    text-align: right;
-  }  
-  .header-selector{
-    flex-basis: 60%;
-    text-align: left;
-    margin-top: 12rem;
-  }  
-  .header-selector-width{
-    margin: 0;
-  }
-  // tablet - header style - small
-  .site-header-small{
-    height: 120px;
-    .header-logo{
-      margin-top: 20px; 
-      padding-right: 15px;
-      img{
-        height: 80px;
-      }
-    }
-    .header-selector{
-      margin-top: 10px;
-      p{
-        margin-bottom: 10px;
-      }
-    }
-  }
-  // tablet - story grid style
-  .story-list-item{
-    flex-basis: 33.33%;
-  }
-}
-
-// desktop view
-@media screen and (min-width: 1000px) {
-  // desktop - header style
-  .header-logo{
-    flex-basis: 20%;
-  }
-  .header-selector{
-    flex-basis: 80%;
-  }
-  // desktop - story grid style
-  .story-list-item{
-    flex-basis: 25%;
-  }
-  // desktop - footer style
-  .footer-copyright{
-    text-align: left;
-    padding-left: 5rem;
-  }
-}

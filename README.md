@@ -9,17 +9,23 @@ It is a one-page, responsive website that allows users to filter top news story 
 - Tablet view: 600-1000px
 - Desktop view: >1000px
 
-#### HTML
-
-#### CSS/SASS
-
 #### JS
 - Use Ajax to fetch data from the NYT Top Stories endpoint
-- Transition users between UI states e.g.add a loading gif
+- Add transitions between UI states for better user experience, such as a loading gif 
 - Use a jQuery plugin Selectric for customizing select styles
 
+#### HTML
+- Use the HTML5 doctype
+
+#### CSS/SASS
+- Implement a mobile-first responsive layout using flexbox
+- Use Sass as a preprocessor
+
 ### Personal learnings
-- Use Gulp for running build tasks, such as minification, Sass compilation, and error checking
+- Use jQuery Ajax methods to load content to a webpage
+- Create authentication credentials and use them to access data within a third-party API
+- Use Gulp for running build tasks, such as minimization, Sass compilation, and error checking
+- Use Sass to keep things organized and neat
 
 ### Screenshot
 <img src="https://user-images.githubusercontent.com/6543823/28548052-bfb9317a-7086-11e7-9028-375bbf0af576.png">

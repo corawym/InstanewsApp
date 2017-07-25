@@ -4,7 +4,6 @@
     @content;
   }
 }
-
 // desktop view
 @mixin desktop {
   @media (min-width: $desktop-width) {

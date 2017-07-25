@@ -29,3 +29,4 @@ It is a one-page, responsive website that allows users to filter top news story 
 
 ### Screenshot
 <img src="https://user-images.githubusercontent.com/6543823/28548052-bfb9317a-7086-11e7-9028-375bbf0af576.png">
+(Desktop view)

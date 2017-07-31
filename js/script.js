@@ -22,7 +22,7 @@ $(() => {
         url: url,
         method: 'GET'
       }).done((result) => {
-        const allTwelveStoriesWithImages = [];
+        let allTwelveStoriesWithImages = [];
         $.each(result.results, (key, value) => {
           // only get a story if it has a photo and get maximum of 12 stories in an array
           if (value.multimedia.length>0 && allTwelveStoriesWithImages.length<12){
@@ -34,10 +34,10 @@ $(() => {
           $.each(allTwelveStoriesWithImages, (key, value) => {
             // get the abstract, url and photo of a story  
             let storyListItem = `<li class='story-list-item'>
-                                  <a href='${value.url}' target='_blank'>
-                                    <div class='story-list-bgphoto' style='background-image:url("${value.multimedia[4].url}")'>
-                                      <p class='story-list-text'>${value.abstract}</p>
-                                  </div></a></li>`;
+            <a href='${value.url}' target='_blank'>
+            <div class='story-list-bgphoto' style='background-image:url("${value.multimedia[4].url}")'>
+            <p class='story-list-text'>${value.abstract}</p>
+            </div></a></li>`;
             
             $('.story-list').append(storyListItem);
           }); // end of each function

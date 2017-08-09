@@ -1,3 +1,7 @@
+import $ from 'jquery';
+import 'jquery-selectric';
+import '../sass/style.scss';
+
 $(() => {
   // jQuery Selectric
   $('select').selectric();

@@ -1,8 +1,24 @@
 {
-  "name": "instanews",
+  "name": "project02-instanewsapp",
   "version": "1.0.0",
-  "description": "one page responsive website using NYT API",
-  "main": "index.js",
+  "description": "It is a one-page, responsive website that allows users to filter top news story categories via the New York Times API. It shows the news story in grids and every story comes with a photo and a short abstract. All of they link to its URL on the NYT website.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-selectric": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,25 +26,10 @@
     "type": "git",
     "url": "git+https://github.com/corawym/InstanewsApp.git"
   },
-  "author": "Cora Wong",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/corawym/InstanewsApp/issues"
   },
-  "homepage": "https://github.com/corawym/InstanewsApp#readme",
-  "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^4.0.0",
-    "gulp-prettyerror": "^1.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^4.3.11"
-  }
+  "homepage": "https://github.com/corawym/InstanewsApp#readme"
 }

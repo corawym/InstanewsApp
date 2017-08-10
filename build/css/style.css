@@ -778,8 +778,8 @@ template {
       flex-basis: 100%; }
   @media (min-width: 600px) {
     .story-list-item {
-      -ms-flex-preferred-size: 33.33%;
-          flex-basis: 33.33%; } }
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
   @media (min-width: 1000px) {
     .story-list-item {
       -ms-flex-preferred-size: 25%;

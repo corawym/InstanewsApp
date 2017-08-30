@@ -16,3 +16,20 @@
   color: $primary-color-white;
   background-color: $background-color-black; 
 }
+.screen-reader{
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+.screen-reader:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+   outline: 0;
+}

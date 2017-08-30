@@ -1,8 +1,6 @@
-$(document).ready(function(){
+$(function() {
   // jQuery Selectric
-  $(function() {
-    $('select').selectric();
-  });
+  $('select').selectric();
 
   // Select a section function
   $('#sections').on('change', function() {

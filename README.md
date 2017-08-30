@@ -23,12 +23,12 @@ It is a one-page, responsive website that allows users to filter top news story 
 
 ## Installation
 #### (branch: master)
-Run `npm install` to install the current package context.
-Use `gulp` for a dev server. The browser will automatically reload if you change any of the source files.
+- Run `npm install` to install the current package context.
+- Use `gulp` for a dev server. The browser will automatically reload if you change any of the source files.
 
 #### (branch: es6)
-Run `npm install` to install the current package context.
-Run `webpack-dev-server` to install webpack. Navigate to your `http://localhost:portnumber/`.
+- Run `npm install` to install the current package context.
+- Run `webpack-dev-server` to install webpack. Navigate to your `http://localhost:portnumber/`.
 
 
 ## Personal learnings
